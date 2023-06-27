@@ -7,8 +7,11 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className={styles.title}>{title}</h2>}
 
       <ul className={styles.statList}>
-        {stats.map(({ id, label, percentage }) => (
-          <li key={id} className={styles.item}>
+        {stats.map(({ id, label, percentage }, index) => (
+          <li
+            key={id}
+            className={`${styles.item} ${styles[`item-${index + 1}`]}`}
+          >
             <span className={styles.label}>{label}</span>
             <span className={styles.percentage}>{percentage}%</span>
           </li>
