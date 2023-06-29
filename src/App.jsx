@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './components/Profile/Profile';
+import Profile from './components/Profile/Profile.jsx';
 import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendsList/FriendList';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
