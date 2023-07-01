@@ -4,7 +4,7 @@ import styles from '../FriendsList/friendList.module.css';
 
 const FriendListItem = ({ id, isOnline, avatar, name }) => {
   return (
-    <li key={id} className={styles.item}>
+    <li className={styles.item}>
       <span
         className={styles.status}
         style={{ backgroundColor: isOnline ? 'green' : 'red' }}
@@ -21,7 +21,6 @@ const FriendListItem = ({ id, isOnline, avatar, name }) => {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.number.isRequired,
   isOnline: PropTypes.bool.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
